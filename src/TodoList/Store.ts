@@ -1,5 +1,6 @@
-import {autorun, when,observable, computed,configure} from 'mobx';
+import {autorun, when,observable, computed,configure,action} from 'mobx';
 import { enableLogging } from 'mobx-logger';
+import { act } from 'react-dom/test-utils';
 
 // mobx 日志,只有本地开发环境会有日志
 enableLogging({
@@ -27,8 +28,13 @@ class TodoListStore {
 
     init (){
         setTimeout(() => {
-            this.title = '111111';
+           this.update();
         }, 1000);
+    }
+
+    @action
+    update(){
+        this.title = '111111';
     }
 
 }
