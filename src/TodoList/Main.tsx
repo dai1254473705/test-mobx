@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import { observer, } from "../modules/mobx-react/mobxreact.cjs.development";
+import { observer } from "../modules/mobx-react/mobxreact.cjs.development";
 import TodoListStore from './Store';
-import { observable } from 'mobx';
+import { observable } from "../modules/mobx/lib/mobx";
+// import { observable } from 'mobx';
 
 @observer
 export default class TodoList extends Component {

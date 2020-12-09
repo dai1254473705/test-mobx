@@ -1,4 +1,6 @@
-import {observable, computed,configure,action} from 'mobx';
+// import {observable, computed,configure,action} from 'mobx';
+import { observable, computed,configure,action} from "../modules/mobx/lib/mobx";
+
 import { enableLogging } from 'mobx-logger';
 
 // mobx 日志,只有本地开发环境会有日志
