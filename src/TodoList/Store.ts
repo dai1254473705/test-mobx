@@ -1,6 +1,5 @@
-import {autorun, when,observable, computed,configure,action} from 'mobx';
+import {observable, computed,configure,action} from 'mobx';
 import { enableLogging } from 'mobx-logger';
-import { act } from 'react-dom/test-utils';
 
 // mobx 日志,只有本地开发环境会有日志
 enableLogging({
